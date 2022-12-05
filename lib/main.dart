@@ -6,20 +6,28 @@ void main() {
         appBar : AppBar(
           title: Text("Hello"),
           centerTitle: true,
+          backgroundColor: Colors.red[600],
         ),
 
         body: Center(
-          child: Text("Hello World"),
+          child: Text(
+            "Hello world",
+            style: TextStyle(
+              fontSize : 20.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.black,
+            ),
+          ),
+
         ),
         
         floatingActionButton: FloatingActionButton(
           child: Text("click"),
-          onPressed: a,
+          onPressed: () {},
+          backgroundColor: Colors.red[600],
         ),
       ),
     ),
   );
-}
-
-void a() {
 }
